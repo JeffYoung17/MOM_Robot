@@ -1,1 +1,0 @@
-rosrun map_server map_saver -f /home/robot/project/catkin_ws/src/robot_slam/maps/hallway
