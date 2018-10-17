@@ -1,0 +1,26 @@
+<launch>
+
+	<include file="$(find ydlidar)/launch/lidar.launch" />
+	<!-- Map server -->
+	<arg name="map_file" default="hall0824.yaml" />
+	<node pkg="map_server" type="map_server" name="map_server"
+		args="$(find robot_slam)/maps/$(arg map_file)" />
+	
+	<!-- move_base -->
+	<include file="$(find robot_navigation)/launch/move_base.launch" />
+	
+	<!-- AMCL -->
+	<include file="$(find robot_navigation)/launch/amcl.launch" />
+	
+	<!-- static tf -->
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint2link" args="0 0 0.13429
+        0 0 0 base_footprint base_link 40" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link2lidar" args="0.006 -0.00040397 0.07675
+        3.1416 0 0 base_link lidar_link 40" />
+    <node pkg="tf" type="static_transform_publisher" name="base_link2imu" args="-0.32 0 0.008
+        -1.5708 0 0 base_link imu_link 40" />
+	
+	<!-- rviz -->
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find robot_navigation)/rviz/nav_mooc.rviz" />
+	
+</launch>

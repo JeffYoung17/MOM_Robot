@@ -1,0 +1,4 @@
+int16 fr_speed_rpm
+int16 fl_speed_rpm
+int16 bl_speed_rpm
+int16 br_speed_rpm

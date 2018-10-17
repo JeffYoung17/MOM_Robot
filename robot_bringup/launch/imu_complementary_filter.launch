@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="imu_complementary_filter" type="complementary_filter_node" name="complementary_filter_node" output="screen" >
+    <param name="fixed_frame" value="base_link" />
+    <param name="publish_tf" value="false" />
+    <param name="use_mag" value="true" />
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+
+	<!-- laser_scan data filter to remove the effect of robot itself -->
+	<node pkg="laser_filters" type="scan_to_scan_filter_chain" name="laser_filter" output="screen">
+		<remap from="scan" to="/scan" />
+		<rosparam command="load" file="$(find robot_bringup)/config/laser_config.yaml" />
+		<remap from="scan_filtered" to="/scan_filtered" />
+	</node>
+
+</launch>

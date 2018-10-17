@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="robot_bringup" type="serial_node" name="serial_node" output="screen" />
+    <node pkg="robot_bringup" type="base_node" name="base_node" output="screen" />
+    <include file="$(find robot_bringup)/launch/imu_complementary_filter.launch" />
+    <include file="$(find robot_bringup)/launch/laser_filter.launch" />
+</launch>
