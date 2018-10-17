@@ -74,7 +74,8 @@ roslaunch robot_navigation nav_demo.launch
 
 在搭建MOM_Robot的过程中，我从许多开源项目，网页，博客论坛和一些人那里得到过帮助，包括但不限于以下内容：<br/>
 [ROS.org](http://wiki.ros.org)<br/>
-[ROSClub mrobot Project](https://github.com/ROSClub/mrobot)<br/>
+[ROSClub/mrobot Project](https://github.com/ROSClub/mrobot)<br/>
+[marooncn/plantbot Project](https://github.com/marooncn/plantbot)
 [创客智造](https://www.ncnynl.com/)<br/>
 [ROS小课堂](http://i.youku.com/i/UMTUzNzkwNTA1Ng==?spm=a2hzp.8253869.0.0)<br/>
 [PIBOT导航机器人](https://www.jianshu.com/u/7f508db63608)
