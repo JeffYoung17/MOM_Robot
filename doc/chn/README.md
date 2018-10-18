@@ -46,6 +46,7 @@ catkin_make
 ## 键盘操控
 
 ```
+roslaunch robot_bringup core.launch
 roslaunch robot_bringup teleop_key.launch
 ```
 

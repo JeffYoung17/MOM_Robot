@@ -48,6 +48,7 @@ catkin_make
 ## Keyboard Teleoperation
 
 ```
+roslaunch robot_bringup core.launch
 roslaunch robot_bringup teleop_key.launch
 ```
 
@@ -72,7 +73,7 @@ roslaunch robot_navigation nav_demo.launch
 
 # Acknowledgement
 
-In the process of building MOM_Robot, I get help from many open source projects, websites, blog forums and some people. Including but limited to the followings:<br/>
+In the process of building MOM_Robot, I get help from many open source projects, websites, blog forums and some people. Including but not limited to the followings:<br/>
 [ROS.org](http://wiki.ros.org)<br/>
 [ROSClub/mrobot Project](https://github.com/ROSClub/mrobot)<br/>
 [marooncn/plantbot Project](https://github.com/marooncn/plantbot)<br/>
