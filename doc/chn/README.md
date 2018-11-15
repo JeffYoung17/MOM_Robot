@@ -37,7 +37,7 @@ Ubuntu 16.04 and ROS Kinetic
 cd ~
 mkdir -p project/catkin_ws/src/
 git clone https://github.com/JeffYoung17/MOM_Robot.git ~/project/catkin_ws/src/
-cd /project/catkin_ws/
+cd ~/project/catkin_ws/
 catkin_make
 ```
 
