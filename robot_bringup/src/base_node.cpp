@@ -29,7 +29,7 @@ int main(int argc, char** argv)
     ros::NodeHandle nh;
     ros::Subscriber encoder_sub = nh.subscribe("encoder", 50, encoder_callback);
     ros::Subscriber imu_sub = nh.subscribe("imu/data", 50, imu_callback);
-    ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 50);
+    ros::Publisher odom_pub = nh.advertise<nav_msgs::Odometry>("odom", 100); // increase queue size of publish tf "odom->base_footprint"
 
     tf::TransformBroadcaster odom_broadcaster;
 
